@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../BOOTSTRAP/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Index</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <nav class="mynav">
+                <div class="logo">
+                    <img src="../IMAGES/kalles.svg" alt="" srcset="">
+                </div>
+
+                <div class="icon">
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user" id="userimg"></i>
+                            <img src="" alt="" width="30px" height="30px" id="userImage">
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span id="wishlist" class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#" class="position-relative" onclick="cartCanvas(this)">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <!-- <img src="../IMAGES/cart.png" alt="" srcset="" width="30px" height="30px"> -->
+                                <span id="bag" class="position-absolute  start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+
+        </header>
+    </div>
+
+    <section>
+        <div class="loader">
+            <div class="loader-inner">
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+        <!-- carousel -->
+        <section id="carousel">
+            <div id="carousel-item">
+                <div class="box box1 active">
+                    <div class="cara-text">
+                        <h3>
+                            Be At One 
+                            <br>
+                            With Your Music
+                        </h3>
+                        <p>
+                            WH-1000XM4 Wireless Noise Cancelling
+                        </p>
+                    </div>
+                   
+                </div>
+                <div class="box box2">
+                    <div class="cara-text">
+                        <h3>
+                            Flexible Dual
+                            <br>
+                            Cuverd Display
+                        </h3>
+                        <p>
+                            Qualcomm® Snapdragon Wear™ 3100
+                        </p>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <div class="cara-text">
+                        <h3>
+                            A Place For all
+                            <br>
+                            Your Devices
+                        </h3>
+                        <p>
+                            Trio Wireless Charger With Magnetic Pad
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-pagination">
+                <button class="page-btn page-btn1" style="background-color: blue;" onclick="carajs(1)"></button>
+                <button class="page-btn page-btn2" onclick="carajs(2)"></button>
+                <button class="page-btn page-btn3" onclick="carajs(3)"></button>
+            </div>
+        </section>
+
+        <!-- feature product section -->
+        <section class="feature-product">
+            <div class="container">
+                <div class="head-product">
+                    <div class="fproduct">
+                        <h2>
+                            Featured Products
+                        </h2>
+                    </div>
+                    <div class="filter-product">
+                        
+                    </div>
+                </div>
+                <div class="category-body">
+                    <div class="row row-cols-5  product-row">
+                        
+                    </div>
+                </div>
+
+            </div>           
+        </section>
+
+        <!-- product modal -->
+        <div id="product-modal">
+            <div id="modal-body">
+                <div id="modal-cara">
+                    <div class="cara-modal-box">
+                        <div class="modal-cara-slide">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="">
+                            <img src="https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRyYXZlbHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60" alt="">
+                            <img src="https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRyYXZlbHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60" alt="">
+                            <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHRyYXZlbHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60" alt="">
+                            <img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHRyYXZlbHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60" alt="">
+                        </div>
+                    </div>
+                        <button class="prev" onclick="modalCara(-850)">&lt;</button>
+                        <button class="next" onclick="modalCara(850)">&gt;</button>
+
+                    <div class="hidden"></div>
+                </div>
+
+
+                <div id="modal-descri">
+
+                    <h1 id="modal-head"></h1>
+                    <p id = "modal-price"></p>
+                    <p id="modal-product-detail"></p>
+
+                    <div class="modal-allbtn">
+
+                        <div class="purches-num">
+                            <button onclick="qantity(-1)" id="minus">-</button>
+                            <span class="numItem">1</span>
+                            <button onclick="qantity(1)" id="plus">+</button>
+                        </div>
+
+                        <button id="modal-cartbtn">Add TO Cart</button>
+                        <button id="modal-wishlist"><i class="fa-regular fa-heart" onclick="wishlist(this)"  style="cursor: pointer;"></i></button>
+
+                    </div>
+
+                    <p class="modal-av">Availability : <span id="stock"></span></p>
+                    <p class="modal-ct">Categories : <span id="modal-cate"></span></p>
+
+                </div>
+
+                <div class="modalCloseBtn" onclick="closeModal()">&#x2715;</div>
+            </div>
+        </div>
+
+        <!-- offcanvas -->
+        <div id="cartOffcanvas" class="offcanvas1">
+            <div class="offcanvas-header">
+                <h3>Shopping Cart</h3>
+                <button id="closeCartBtn" class="cart-close-btn" onclick="closeCanvas()">&times;</button>
+            </div>
+            <div id="cartItems" class="offcanvas-body">
+                <div id="myCart">
+                   
+                </div>               
+            </div>
+            <div class="offcanvas-footer">
+                <h3>SUBTOTAL : </h3>
+                <h3 id="total"></h3>
+                <!-- <button id="checkoutBtn">Checkout</button> -->
+            </div>
+        </div>
+
+        <!-- LOGIN POPUP -->
+        <div>
+            <div id="loginPopup" class="popup">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <div class="loginCancelBtn">
+                    <button id="loginBtn">Login</button>
+                    <button id="cancelBtn">Cancel</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    <script src="../JS/index.js"></script>
+    <script src="../../../BOOTSTRAP/bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
